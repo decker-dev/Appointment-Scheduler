@@ -10,7 +10,6 @@ function App() {
   const [appointments, setappointment] = useState(initializeAppointments);
   useEffect(() => {
     //effect
-    console.log("xd");
     if(initializeAppointments){
       localStorage.setItem('appointments',JSON.stringify(appointments))
     }else{
@@ -32,7 +31,7 @@ function App() {
     appointments.length === 0 ? "no appointments" : "List appointments";
   return (
     <Fragment>
-      <h1>que onda</h1>
+      <h1>ADMIN</h1>
       <div className="container">
         <div className="row">
           <div className="one-half column">
